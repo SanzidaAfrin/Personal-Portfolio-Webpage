@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.54;
+    text-align: center;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+#navbar{
+    background-color: #be3144;
+    color: #fff;
+    padding: 0rem 3rem;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100vw;
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+}
+#navbar ul a{
+    display: inline-block;
+    padding: 1.2rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+#navbar ul a:hover{
+    background-color: #444857;
+}
+#about{
+    height: 100vh;
+    background-color: #2a2b2e;
+}
+.a_container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#title{
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+.lead{
+    font-size: 1.8rem;
+    color: #eee;
+    font-weight: 700;
+}
+
+img{
+    width: 100%;
+}
+
+#work{
+    text-align: center;
+    width: 100%;
+    padding: 4rem .1rem;
+    background-color:#45567d;
+}
+.hone{
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+.bottom-line{
+    height: 2px;
+    background-color: #fff;
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.box{
+    background-color: #eee;
+}
+.box a{
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+.box a p{
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+}
+.code{
+    color: #eee;
+    transition: .5s all ease;
+}
+.box:hover .code{
+    color: rgb(211, 82, 8);
+}
+.btn{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 4rem;
+    text-align: center;
+    padding: .6rem 1.5rem;
+    border-radius: 2rem;
+    background-color: #303841;
+}
+.btn:hover{
+    background-color: #be3144;
+}
+
+#contact{
+    height: 80vh;
+    background-color: #303841;
+    color: #fff;
+}
+.cont-container{
+    background-color: #303841;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+.cont-container h1{
+    font-size: 3.4rem;
+    font-weight: bolder;
+    padding-bottom: .1rem;
+}
+.cont-container p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.social a{
+    display: inline-block;
+    text-decoration: none;
+    color: #eee;
+    font-size: 1rem;
+    margin: 1rem 2rem;
+    /* font-weight: bolder; */
+    transition: transform .5s;
+}
+.social a:hover{
+    transform: translateY(-5px);
+}
+
+.fbottom-line{
+    height: 3px;
+    background-color: #be3144;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+#main-footer{
+    background-color: #303841;
+    padding: 1rem;
+    color: #fff;
+
+}
+.fcontainer{
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+.fcontainer p{
+    font-size: 1.2rem;
+}
+#creator a{
+    text-decoration: none;
+    color: #eee;
+    text-decoration: underline;
+}
+
+
+/* Smartphone */
+@media(max-width:600px){
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+      }
+    .social a{
+        display: block;
+        margin: 1rem 1.5rem;
+    }
+}
